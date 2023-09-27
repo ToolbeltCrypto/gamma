@@ -21,21 +21,22 @@
     }
 }
 
+/* h1 font? dropdown connect wallet? */
+
 html {
-    --color1: #e69a62;
-    --color2: #e08159;
-    --color3: #ae5137;
-    --color4: #722b24;
-    --white: #fffefa;
-    --black: #24282e;
+    --color1: #422c30;
+    --color2: #984a32;
+    --color3: #f2c578;
+    --white: #f2ca96;
+    --black: #211a16;
     --darkBlack: #02040f;
-    --font1: 'Lucida Sans'; 
-    --font2: 'Lucida Grande';
+    --font1: 'Times New Roman'; 
+    --font2: Times;
     --font3: 'Lucida Sans Regular';
+    background-color: var(--white);
     cursor: default;
     user-select: none;
 } body {
-    background-color: var(--white);
     font-family: var(--font1); 
     margin: 0;
     padding: 0;
@@ -45,7 +46,8 @@ html {
     display: block;
     font-size: 24%;
 } h1 {
-    font-family: var(--font3);
+    color: var(--black);
+    font-family: var(--font2);
     font-size: 48px;
     font-weight: 500;
     margin-bottom: -4px;
@@ -55,10 +57,10 @@ html {
 ::-webkit-scrollbar {
     width: 0px;
 } ::placeholder {
-    color: var(--color4);
+    color: var(--color3);
     text-align: center;
 } ::-ms-input-placeholder {
-    color: var(--color4);
+    color: var(--color3);
     text-align: center;
 }
 
@@ -158,13 +160,13 @@ a {
     position: fixed;
     display: inline-block;
     top: 0;
-    background-color: var(--darkBlack);
+    background-color: transparent;
     width: 100%;
 } .navbar {
     padding: 16px;
 } .navbar [type="main"] {
     display: inline-block;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
@@ -180,7 +182,7 @@ a {
 } .navbarMini {
     position: fixed;
     display: inline-block;
-    background-color: var(--black);
+    background-color: transparent;
     width: 100%;
     margin: 0px;
     padding: 24px;
@@ -197,7 +199,7 @@ a {
     cursor: pointer;
 } .navbarMini #musicSearch {
     position: fixed;
-    background-color: var(--darkBlack);
+    background-color: var(--color1);
     width: 128px;
     right: 64px;
     margin: 0px;
@@ -207,7 +209,7 @@ a {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    color: var(--color2);
+    color: var(--color1);
     margin: 8px;
 } .navbarMini [name="musicChoice"] {
     display: block;
@@ -229,7 +231,7 @@ a {
     position: relative;
     margin: 0;
     padding: 14px 28px;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     font-size: 24px;
     font-weight: 100;
@@ -240,7 +242,7 @@ a {
 } .dropdownForm {
     display: none;
     position: absolute;
-    background-color: var(--black);
+    background-color: var(--color1);
     color: var(--white);
     min-width: 100%;
     border-bottom-left-radius: 8px;
@@ -256,6 +258,57 @@ a {
 } .dropdownForm div:hover {
     background-color: var(--white);
     color: var(--black);
+}
+
+#introContainer {
+    text-align: left;
+    margin: 64px;
+} #introTitleContainer {
+    font-size: 32px;
+    font-weight: bold;
+} #introHeadingContainer {
+    font-size: 48px;
+    font-weight: bold;
+    width: 60%;
+} #introHeadingContainer p {
+    margin: 0px;
+} #introSubtitleContainer {
+    font-size: 16px;
+    width: 60%;
+}
+
+.divBreak {
+    background-color: var(--color1);
+    border: none;
+    padding: 20px;
+} .divBreak p {
+    display: inline-block;
+    color: var(--white);
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10%;
+}
+
+.boxContainer {
+    display: inline-block;
+    position: relative;
+    background-color: var(--darkBlack);
+    color: var(--white);
+    width: 288px;
+    padding: 16px;
+    margin: 16px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: top;
+} .boxContainer .homeTitle {
+    font-family: var(--font3);
+    font-weight: lighter;
+    margin-top: 16px;
+    margin-bottom: 24px;
+} .boxContainer p {
+    margin: 0;
 }
 
 .homeContainer {
@@ -344,12 +397,12 @@ a {
 } .optionMenuSearch {
     margin: 0;
     margin-top: 4px;
-    background-color: var(--black);
-    color: var(--white);
-    border-radius: 16px;
+    background-color: var(--darkBlack);
+    color: var(--color3);
+    border-radius: 5px;
     width: 256px;
 } .optionMenuSearch::placeholder {
-    color: var(--color2);
+    color: var(--white);
 } .optionMenuChoiceContainer {
     display: inline-block;
     margin: 0;
@@ -513,7 +566,6 @@ a {
     margin: 0;
 } .statsZone p {
     display: inline-block;
-    color: var(--white);
     margin: 0;
     margin-top: 1px;
     margin-bottom: 4px;
@@ -525,6 +577,7 @@ a {
     margin-top: -8px;
     margin-bottom: 8px;
 } .statsDescriptor {
+    color: var(--color2);
     font-weight: 550;
     padding-left: 28px;
 } #statsForm [type="button"] {
@@ -572,7 +625,7 @@ a {
 } .hexTable tr {
     text-align: left;
 } .hexTable th {
-    color: var(--color1);
+    color: var(--color2);
     margin-top: 40px;
     padding: 4px;
 } .hexTable td {

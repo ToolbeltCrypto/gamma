@@ -6,14 +6,34 @@
 <!-- fix warning? -->
 <h1 class="center" id="mobileWarning">TURN SCREEN TO ENTER LANDSCAPE MODE</h1>
 
-<div id="bgimgContainer" style="height: 90%;">
+<!-- <div id="bgimgContainer" style="height: 90%;">
     <img id="bgimg" src="./image/avatar.png"></img>
-</div>
+</div> -->
 <div id="product">
     <!-- HOME -->
     <div class="zone" id="zoneHome">
-        <h1>Toolbelt</h1>
-        <p>Discover an ecosystem built for you.</p>
+        <div id="introContainer">
+            <div id="introTitleContainer">
+                <p>Toolbelt</p>
+            </div>
+            <div id="introHeadingContainer">
+                <p>Shaping the Future of Crypto with Utility and Innovation.</p>
+            </div>
+            <div id="introSubtitleContainer">
+                <p>We believe web3 is failing at the core premise of decentralization. Tokens claim to be decentralized yet restrict access to certain smart contract functions. Some functions include changing token tax, minting tokens, and whitelisting wallets. Neccesary for the token, but all of these functions exist in a centralized, exploitable domain. Until now.</p>
+            </div>
+        </div>
+        <img src="image/person_thinker.png" style="display: block; margin-top: -64px; height: 256px; width: 288px; float: right; margin-right: 10%"></img>
+        <div style="margin-bottom: 256px;"></div>
+        <div class="divBreak">
+            <p>Blockchain</p>
+            <p>Web3</p>
+            <p>Cryptocurrency</p>
+            <p>Defi</p>
+            <p style="margin-right: 0;">Decentralization</p>
+        </div>
+        <div style="margin-bottom: 128px;"></div>
+
         <div style="display: flex; justify-content: center;">
             <div id="homeGrid">
 
@@ -145,6 +165,55 @@
                 </div>
             </div>
         </div>
+
+        <div style="margin-bottom: 192px;"></div>
+
+        <div style="display: inline-block;">
+            <div class="boxContainer">
+                <p class="homeTitle">Utility</p>
+                <div class="boxContainer" style="background-color: #fff; width: 192px;">
+                    <img src="./image/utility.png" style="height: 128px; width: 160px;"></img>
+                </div>
+                <div class="boxContainer" style="height: 128px; width: 192px; background-color: var(--color4);">
+                    <p>Each dapp solves a unique problem leading to a net gain from revenue streams. All revenue is forced into the token to reward holders and stakers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: inline-block;">
+            <div class="boxContainer">
+                <p class="homeTitle">Empowerment</p>
+                <div class="boxContainer" style="background-color: #fff; width: 192px;">
+                    <img src="./image/empowerment.png" style="height: 128px; width: 128px;"></img>
+                </div>
+                <div class="boxContainer" style="height: 128px; width: 192px; background-color: var(--color4);">
+                    <p>All smart contract changes can be voted on, empowering the community with full control of the token. We set the standard for fluid decentralization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: inline-block;">
+            <div class="boxContainer">
+                <p class="homeTitle">Transparency</p>
+                <div class="boxContainer" style="background-color: #fff; width: 192px;">
+                    <img src="./image/transparency.png" style="height: 128px; width: 128px;"></img>
+                </div>
+                <div class="boxContainer" style="height: 128px; width: 192px; background-color: var(--color4);">
+                    <p>With no authority to undermine the power of community members, the team has no incentive to hide or censor any information.</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>Join our community</h1>
+        <p>Get involved and shape the future.</p>
+        <a target="_blank" href="https://t.me/ToolbeltCrypto" tabindex="0">
+            <div type="button">Join Telegram</div>
+        </a>
+        <div style="margin-bottom: 64px;"></div>
+        <div style="display: inline-block; width: 576px;">
+            <p style="font-size: 20px;">Find answers, connections, and information you need to grow within decentralized finance.</p>
+        </div>
+        <div style="margin-bottom: 192px;"></div>
     </div>
 
     <!-- SOCIAL -->
@@ -388,19 +457,19 @@
                     
                     <div class="chart"><div class="circle" id="stakePerSupply" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">SUPPLY STAKED:</p>
-                    <p id="stakeTotal" style="color: var(--color1);"></p>
+                    <p id="stakeTotal" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="stakePerTotal" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">USER STAKED:</p>
-                    <p id="stakeUser" style="color: var(--color1);"></p>
+                    <p id="stakeUser" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="timeLeft" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">UNSTAKABLE:</p>
-                    <p id="unstakableUser" style="color: var(--color1);"></p>
+                    <p id="unstakableUser" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="rewardsPerTotal" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">USER REWARDS:</p>
-                    <p id="rewardsUser" style="color: var(--color1);"></p>
+                    <p id="rewardsUser" style="color: var(--white);"></p>
                 </div>
 
                 <div class="statsZone" id="statsSale" style="display: none;">
@@ -412,19 +481,19 @@
 
                     <div class="chart"><div class="circle" id="balancePerTotalPair" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">FUNDS RAISED:</p>
-                    <p id="totalPair" style="color: var(--color1);"></p>
+                    <p id="totalPair" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="liquidityPercentChart" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">INTO LIQUIDITY:</p>
-                    <p id="liquidityPercent" style="color: var(--color1);"></p>
+                    <p id="liquidityPercent" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="saleTime" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">TIME LEFT:</p>
-                    <p id="saleTimeLeft" style="color: var(--color1);"></p>
+                    <p id="saleTimeLeft" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="unlockablePercentChart" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">UNLOCKABLE:</p>
-                    <p id="unlockablePercent" style="color: var(--color1);"></p>
+                    <p id="unlockablePercent" style="color: var(--white);"></p>
                 </div>
 
                 <div class="statsZone" id="statsApprove" style="display: none;">
@@ -438,7 +507,7 @@
 
                     <div class="chart"><div class="circle" id="allowancePerBalance" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">ALLOWANCE:</p>
-                    <p id="allowanceUser" style="color: var(--color1);"></p>
+                    <p id="allowanceUser" style="color: var(--white);"></p>
                 </div>
 
                 <div class="statsZone" id="statsAffiliate" style="display: none;">
@@ -451,15 +520,15 @@
 
                     <div class="chart"><div class="circle" id="connectionsPerMost" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">CONNECTIONS:</p>
-                    <p id="connectionsUser" style="color: var(--color1);"></p>
+                    <p id="connectionsUser" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="tokensEarnedPerMost" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">EARNINGS:</p>
-                    <p id="tokensEarnedUser" style="color: var(--color1);"></p>
+                    <p id="tokensEarnedUser" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="hasAffiliate" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">AFFILIATE:</p>
-                    <p id="referrer" style="font-size: 12px; color: var(--color1);"></p>
+                    <p id="referrer" style="font-size: 12px; color: var(--white);"></p>
                 </div>
 
                 <div class="statsZone" id="statsLocker" style="display: none;">
@@ -472,24 +541,24 @@
 
                     <div class="chart"><div class="circle" id="voteYayPerTotal" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">VOTING:</p>
-                    <p id="votePercent" style="color: var(--color1);"></p>
+                    <p id="votePercent" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="voteTimePerTotal" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">TIME LEFT:</p>
-                    <p id="voteTime" style="color: var(--color1);"></p>
+                    <p id="voteTime" style="color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="lockerContractCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">CONTRACT:</p>
-                    <p id="lockedContract" style="font-size: 12px; color: var(--color1);"></p>
+                    <p id="lockedContract" style="font-size: 12px; color: var(--white);"></p>
                     
                     <div class="chart"><div class="circle" id="lockerFunctionCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">FUNCTION:</p>
-                    <p id="functionName" style="font-size: 12px; color: var(--color1);"></p>
-                    <p id="functionValues" style="font-size: 12px; color: var(--color1);"></p>
+                    <p id="functionName" style="font-size: 12px; color: var(--white);"></p>
+                    <p id="functionValues" style="font-size: 12px; color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="lockerReturnCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">RETURN:</p>
-                    <p id="lockerReturn" style="font-size: 12px; color: var(--color1);"></p>
+                    <p id="lockerReturn" style="font-size: 12px; color: var(--white);"></p>
                 </div>
 
                 <div class="statsZone" id="statsEvent" style="display: none;">
@@ -503,15 +572,15 @@
 
                     <div class="chart"><div class="circle" id="eventBlockCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">BLOCK:</p>
-                    <p id="eventBlock" style="font-size: 14px; color: var(--color1);"></p>
+                    <p id="eventBlock" style="font-size: 14px; color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="eventSignatureCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">EVENT:</p>
-                    <p id="eventSignature" style="font-size: 14px; color: var(--color1);"></p>
+                    <p id="eventSignature" style="font-size: 14px; color: var(--white);"></p>
 
                     <div class="chart"><div class="circle" id="eventValuesCircle" style="background-color: var(--white);"><div class="innerCircle"></div></div></div>
                     <p class="statsDescriptor">VALUES:</p>
-                    <p id="eventValues" style="font-size: 9px; color: var(--color1);"></p>
+                    <p id="eventValues" style="font-size: 9px; color: var(--white);"></p>
                 </div>
             </form>
         </div>
@@ -573,7 +642,6 @@
         </div>
 
         <div class="navbarMini">
-            <!-- fix img transparency? -->
             <audio id="musicAudio"></audio>
             <div id="musicToggle" tabindex="0" alt="MUTE">🔇</div>
             <input class="optionMenuSearch" id="musicSearch" autocomplete="off" placeholder="Music Search"></input>
