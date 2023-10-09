@@ -160,7 +160,7 @@ a {
     position: fixed;
     display: inline-block;
     top: 0;
-    background-color: transparent;
+    background-color: inherit;
     width: 100%;
 } .navbar {
     padding: 16px;
