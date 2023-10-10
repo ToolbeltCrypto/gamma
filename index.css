@@ -474,6 +474,29 @@ a {
     color: var(--white);
 }
 
+/* copy */
+#alertBox {
+    display: none;
+    position: fixed;
+    background-color: var(--color1);
+    max-height: fit-content;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+} #alertMessage {
+    font-size: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: var(--white);
+} #alertExit {
+    position: fixed;
+    bottom: 36px;
+    right: 16px;
+    font-size: 16px;
+    color: var(--white);
+}
+/* copy */
+
 #toggleButtonContainer {
     position: fixed;
     bottom: 48px;
